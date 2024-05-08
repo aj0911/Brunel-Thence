@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Website Hosting:
-The Website is hosted at [Brunel - Thence](https://brunel-thence.vercel.app)
+The Website is hosted at [Brunel - Thence](https://brunel-thence-abhinavjha.vercel.app)
 
 ## Available Scripts
 
