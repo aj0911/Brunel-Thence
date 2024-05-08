@@ -1,0 +1,242 @@
+.FormField{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 20px 20px 20px;
+    header{
+        .icon{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #CACACA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: var(--textColor-1);
+        }
+    }
+    .box{
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-direction: column;
+        width: 50%;
+        .heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h5{
+                font-family: 'Covered By Your Grace';
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: var(--textColor-2);
+                text-align: center;
+            }
+            h3{
+                font-size: 2.5rem;
+                font-weight: 600;
+                color: var(--textColor-1);
+                text-align: center;
+                width: 70%;
+            }
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+            input{
+                width: 45%;
+                border: none;
+                background-color: #EFEFEF;
+                padding: 15px 20px;
+                font-size: .9rem;
+                color: var(--textColor-1);
+                font-weight: 600;
+                border-radius: 30px;
+            }
+            input:focus{
+                outline-color: #537FF1;
+                background-color: #F5F8FF;
+            }
+            input[type="submit"]{
+                color: var(--bgColor-1);
+                background-color: var(--textColor-1);
+                cursor: pointer;
+                transition: var(--transition);
+            }
+            input[type="submit"]:hover{
+                background-color: var(--hoverColor-1);
+            }
+            .warn{
+                width: 45%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: .5rem;
+                img{
+                    color: #FF0808;
+                    font-size: .9rem;
+                }
+                p{
+                    color: #FF0808;
+                    font-size: .9rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.Success{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 20px 20px 20px;
+    flex-direction: column;
+    position: relative;
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 60px;
+            height: 60px;
+            margin-bottom: 2rem;
+        }
+        h5{
+            font-family: 'Covered By Your Grace';
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--textColor-2);
+            text-align: center;
+        }
+        h3{
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--textColor-1);
+            text-align: center;
+            width: 70%;
+        }
+        p{
+            font-size: 1.1rem;
+            color: #727272;
+            font-weight: 500;
+            width: 45%;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+    >p{
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.1rem;
+        color: #727272;
+        font-weight: 500;
+        text-align: center;
+        span{
+            color: var(--textColor-1);
+            font-weight: 700;
+        }
+    }
+}
+
+/* Responsiveness */
+/* For Tablets */
+@media screen and (max-width:999px) {
+    .FormField {
+        .box {
+            width: 100%;
+            .heading {
+                h3 {
+                    width: 85%;
+                }
+            }
+            form{
+                input{
+                    width: 70%;
+                }
+                .warn{
+                    width: 70%;
+                }
+            }
+        }
+    }
+  .Success{
+    .box{
+        
+        p{
+            width: 85%;
+        }
+        
+    }
+    >p{
+        width: 85%;
+    }
+  }
+}
+/* For Mobile Phones */
+@media screen and (max-width:599px) {
+    .FormField {
+        .box {
+            .heading {
+                h3 {
+                    width: 100%;
+                    font-size: 2rem;
+                }
+                h5{
+                    width: 100%;
+                    font-size: 1.3rem;
+                }
+            }
+            form{
+                input{
+                    width: 100%;
+                }
+                .warn{
+                    width: 90%;
+                }
+            }
+        }
+    }
+  .Success{
+    .box{
+        img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 2rem;
+            width: 100%;
+        }
+        h5{
+            font-size: 1.3rem;
+            width: 100%;
+        }
+        p{
+            width: 100%;
+            font-size: .9rem;
+            margin-top: .5rem;
+        }
+        
+    }
+    >p{
+        width: 100%;
+        font-size: .9rem;
+    }
+  }
+}

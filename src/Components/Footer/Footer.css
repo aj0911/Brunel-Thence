@@ -1,0 +1,48 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 50px 30px;
+    background-color: #F5F5F5;
+    border-radius: 30px;
+    p{
+        font-size: .9rem;
+        font-weight: 600;
+        color: var(--textColor-1);
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        h5{
+            font-size: .9rem;
+            font-weight: 400;
+            color: var(--textColor-1);
+            border-bottom: 1px solid var(--textColor-1);
+        }
+    }
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+  
+}
+/* For Mobile Phones */
+@media screen and (max-width:599px) {
+  footer{
+    flex-direction: column;
+    gap: 1rem;
+    padding:20px;
+    p{
+        font-size: .8rem;
+    }
+    .content{
+        h5{
+            font-size: .8rem;
+        }
+    }
+  }
+}

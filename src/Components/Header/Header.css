@@ -1,0 +1,28 @@
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px);
+    gap: 2rem;
+    padding: 10px 10px 10px 30px;
+    background-color: var(--bgColor-1);
+    margin-top: 10px;
+    z-index: 5;
+    img{
+        width: 80px;
+        object-fit: cover;
+    }
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+
+}
+/* For Mobile Phones */
+@media screen and (max-width:599px) {
+    header{
+        width: calc(100% - 20px);
+        padding: 10px;
+    }
+}

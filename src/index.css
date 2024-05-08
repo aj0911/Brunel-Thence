@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace:regular);
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Manrope';
+  list-style-type: none;
+}
+
+:root{
+  --bgColor-1:#FFFFFF;
+  --textColor-1:#1C1C1C;
+  --textColor-2:#2DA950;
+  --textColor-3:#828282;
+  --borderColor-1:#EAEAEA;
+  --bgColor-2:#DDEFE0;
+  --hoverColor-1:#4E4E4E;
+  --transition:all .4s;
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+  
+}
+/* For Mobile Phones */
+@media screen and (max-width:599px) {
+  
+}
